@@ -40,6 +40,12 @@ var messages = {
     url: (field) => `${field}が正しいURLではありません`
 };
 
-exports.default = messages;
+var locale = {
+  name: 'ja',
+  messages,
+  attributes: {}
+};
+
+exports.default = locale;
 
 module.exports = exports['default'];
