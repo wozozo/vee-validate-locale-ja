@@ -1,4 +1,4 @@
-const messages = {
+var messages = {
     _default: (field) => `${field}が正しい値ではありません`,
     after: (field, [target]) => `${field}は${target}の後に入力してください`,
     alpha_dash: (field) => `${field}は英数字とハイフン、アンダースコアのみ使用できます`,
@@ -39,3 +39,7 @@ const messages = {
     size: (field, [size]) => `${field}は${formatFileSize(size)}以内にしてください`,
     url: (field) => `${field}が正しいURLではありません`
 };
+
+exports.default = messages;
+
+module.exports = exports['default'];
