@@ -4,7 +4,7 @@ Japanese translation file of VeeValidate
 ## Usage
 
 ```javascript
-import VeeValidate from 'vee-validate';
+import VeeValidate from "vee-validate";
 import VeeValidateLocaleJA from "vee-validate-locale-ja";
 
 VeeValidate.Validator.addLocale(VeeValidateLocaleJA);
