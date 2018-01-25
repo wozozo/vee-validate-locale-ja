@@ -1,4 +1,4 @@
-var messages = {
+const messages = {
     _default: (field) => `${field}が正しい値ではありません`,
     after: (field, [target]) => `${field}は${target}の後に入力してください`,
     alpha_dash: (field) => `${field}は英数字とハイフン、アンダースコアのみ使用できます`,
@@ -40,12 +40,10 @@ var messages = {
     url: (field) => `${field}が正しいURLではありません`
 };
 
-var locale = {
+const locale = {
   name: 'ja',
   messages,
   attributes: {}
 };
 
-exports.default = locale;
-
-module.exports = exports['default'];
+export default locale;
